@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: wheat;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .logo {
+  width: 20px;
+}
+
+.container h1 {
+  margin: 1rem 0;
+}
+
+.container p {
+  margin: 1rem 0 1rem;
+  line-height: 1.2rem;
+}
+
+.container .contain .left {
+  background: linear-gradient(150deg, #123 0%, #987 100%);
+  padding: 1rem;
+}
+
+.container .contain .left .light {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.container .contain .right input, .container .contain .right button {
+  padding: .5px;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.container .contain .right button {
+  background-color: saddlebrown;
+  cursor: pointer;
+  margin: 0;
+}
+
+.container .contain .right .attension {
+  width: 100%;
+  margin: .5rem auto 0;
+  text-align: center;
+}
+
+.container .contain .right .attension .me {
+  width: 120px;
+  margin-top: 1rem;
+}
+
+.container .contain .right .attension .arrow {
+  width: 120px;
+}
+
+@media only screen and (min-width: 560px) {
+  body {
+    font-size: 18px;
+  }
+  body input {
+    width: calc(30% - 2rem);
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contain .left {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    height: 100vh;
+    text-align: left;
+    display: -ms-grid;
+    display: grid;
+  }
+  .contain .left .conten {
+    padding: 0 2rem;
+  }
+  .contain .right {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    padding: 1rem;
+  }
+  .contain .right .plogo {
+    text-align: left;
+  }
+  .proto-type {
+    -webkit-clip-path: inset(0 25% 0 0);
+            clip-path: inset(0 25% 0 0);
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    z-index: 0;
+    width: 100%;
+  }
+  .proto-type .photo {
+    border: 3px solid rgba(245, 222, 179, 0.1);
+    width: 19%;
+    height: 80%;
+    float: left;
+    margin-left: 1rem;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+/*# sourceMappingURL=main.css.map */

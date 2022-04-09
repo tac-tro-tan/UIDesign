@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: wheat;
+    font-size: 16px;
+    height: 100vh;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+    .logo{
+        width: 20px;
+    }
+    h1{
+        margin: 1rem 0;
+    }
+    p{
+        margin: 1rem 0 1rem;
+        line-height: 1.2rem;
+    }
+    .contain{
+        .left{
+            background: linear-gradient(150deg, #123 0%, #987 100%);
+            padding: 1rem;
+            .light{
+                color: rgba($color: #000000, $alpha: .7) !important;
+            }
+        }
+        .right{
+            input,button{
+                // width: calc(100% - 3rem);
+                padding: .5px;
+                font-size: 0.8rem;
+                outline: none;
+            }
+            button{
+                background-color: saddlebrown;
+                cursor: pointer;
+                margin: 0;
+
+            }
+            .attension{
+                width: 100%;
+                margin: .5rem auto 0;
+                text-align: center;
+                .me{
+                    width: 120px;
+                    margin-top: 1rem; 
+                }
+                .arrow{
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 560px) {
+    body{
+        font-size: 18px;
+        input{
+            width: calc(30% - 2rem);
+        }
+    }
+}
+@media only screen and (min-width: 1020px) {
+    .contain{
+        display: flex;
+        .left{
+            flex: 5;
+            height: 100vh;
+            text-align: left;
+            display: grid;
+            .conten{
+                padding: 0 2rem;
+            }
+        }
+        .right{
+            flex: 5;
+            height: 100vh;
+            display: grid;
+            padding: 1rem;
+            .plogo{
+                text-align: left;
+            }
+        }
+    }
+    .proto-type{
+        clip-path: inset(0 25% 0 0);
+        position: absolute;
+        top: 20%;
+        height: 80%;
+        z-index: 0;
+        width: 100%;
+        // pointer-events: painted;
+        .photo{
+            border: 3px solid rgba($color: wheat, $alpha: .1);
+            width: 19%;
+            height: 80%;
+            float: left;
+            margin-left: 1rem;
+            transform: translateX(10%);
+        }
+    }
+}
